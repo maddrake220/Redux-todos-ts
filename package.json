@@ -16,9 +16,11 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
+    "redux-actions": "^2.6.5",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.5",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.21"
+    "@types/redux-actions": "^2.6.2",
+    "@types/styled-components": "^5.1.21",
+    "@types/uuid": "^8.3.4"
   }
 }

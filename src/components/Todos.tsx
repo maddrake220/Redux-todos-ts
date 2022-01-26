@@ -4,6 +4,7 @@ import Active from "./Active";
 import All from "./All";
 import Completed from "./Completed";
 import Navigation from "./Navigation";
+import NewTodo from "./NewTodo";
 
 const Todos = () => {
   return (
@@ -11,9 +12,7 @@ const Todos = () => {
       <h1>todos</h1>
       <div className="todosForm">
         <header>
-          <div className="newTodos">
-            <input type="text" placeholder="What needs to be done?" />
-          </div>
+          <NewTodo />
         </header>
         <section>
           <Routes>
@@ -52,20 +51,6 @@ const TodosSection = styled.section`
     margin-top: 110px;
     box-shadow: 0 1px 1px 1px rgba(100, 97, 97, 0.15);
     header {
-      .newTodos {
-        display: flex;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.003);
-        box-shadow: 0 2px 2px -2px gray;
-
-        input {
-          font-size: 24px;
-          padding: 16px 86px 16px 60px;
-          :focus {
-            outline: none;
-          }
-        }
-      }
     }
   }
 `;
