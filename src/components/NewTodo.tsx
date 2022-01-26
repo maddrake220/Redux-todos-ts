@@ -12,7 +12,11 @@ const NewTodo = () => {
   const onKeyPressHandler = useCallback(
     (e) => {
       if (e.key === "Enter") {
+        if (todo === "") {
+          return;
+        }
         dispatch(addTodo(todo));
+        setTodo("");
       }
     },
     [dispatch, todo]
